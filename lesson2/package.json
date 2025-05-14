@@ -1,13 +1,15 @@
 {
-  "name": "typescript2025-lesson1",
+  "name": "typescript2025-lesson2",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
+  "type": "module",
   "scripts": {
-    "docs": "jsdoc src -r -c jsdoc.config.json -d docs"
+    "start": "tsc -w",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "https://git@github.com/ksanster/typescript2025.git"
+    "url": "git+https://git@github.com/ksanster/typescript2025.git"
   },
   "author": "a.semin",
   "license": "ISC",
@@ -15,8 +17,8 @@
     "url": "https://github.com/ksanster/typescript2025/issues"
   },
   "homepage": "https://github.com/ksanster/typescript2025#readme",
-  "description": "",
   "devDependencies": {
-    "jsdoc": "^4.0.4"
-  }
+    "typescript": "^5.8.3"
+  },
+  "description": ""
 }
