@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs": "jsdoc src -r -c jsdoc.config.json -d docs"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
     "url": "https://github.com/ksanster/typescript2025/issues"
   },
   "homepage": "https://github.com/ksanster/typescript2025#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jsdoc": "^4.0.4"
+  }
 }
