@@ -19,5 +19,12 @@
  *
  */
 function sum(a, b) {
+    if (typeof a !== typeof b) {
+        throw new Error('Operands must be same type');
+    }
+
     return a + b;
 }
+
+console.log(sum(1, 41));
+console.log(sum(1, 41n));
