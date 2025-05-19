@@ -13,6 +13,8 @@
  * Принимает два аргумента строго одного типа из множества: number, bigint или string,
  * возвращает результат сложения (конкатенации для строк).
  *
+ * @throws {TypeError} Типы операндов должны быть одинаковы
+ *
  * @example
  * console.log(sum(40, 2));
  * // → 42
@@ -20,7 +22,7 @@
  */
 function sum(a, b) {
     if (typeof a !== typeof b) {
-        throw new Error('Operands must be same type');
+        throw new TypeError('Operands must be same type');
     }
 
     return a + b;
