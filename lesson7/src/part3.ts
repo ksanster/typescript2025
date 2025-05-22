@@ -10,6 +10,6 @@ class CoVariantWrapper<out T> {
 
     a = b; // Все ок
 
-// @ts-expect-error
+    // @ts-expect-error
     c = b;
 }

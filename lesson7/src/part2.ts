@@ -30,7 +30,7 @@ function copyFrom<T, U extends T>(a:Wrapper<U>, b:Wrapper<T>):void {
     const b = new Wrapper(new B());
     const c = new Wrapper(new C());
 
-// @ts-expect-error
+    // @ts-expect-error
     copyFrom(a, b);
 
     copyFrom(b, a); // Все ок

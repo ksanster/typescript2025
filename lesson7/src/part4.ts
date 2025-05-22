@@ -7,8 +7,8 @@ class InVariantWrapper<in out T> {
     let b = new InVariantWrapper(new B());
     let c = new InVariantWrapper(new C());
 
-// @ts-expect-error
+    // @ts-expect-error
     a = b;
-// @ts-expect-error
+    // @ts-expect-error
     c = b;
 }

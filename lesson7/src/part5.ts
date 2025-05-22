@@ -7,8 +7,10 @@ class ContrVariantWrapper<in T> {
     let b = new ContrVariantWrapper(new B());
     let c = new ContrVariantWrapper(new C());
 
-// @ts-expect-error
+
+    // @ts-expect-error
     a = b;
-// @ts-expect-error
+
+    // @ts-expect-error
     c = b;
 }
