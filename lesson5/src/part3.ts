@@ -14,7 +14,7 @@ interface Rectangle extends Shape {
     height: number;
 }
 
-type CircleType = Exclude<Shape['type'], 'rectangle'>;
+type CircleType = `${Circle['type']}`;
 type RectangleType = Exclude<Shape['type'], 'circle'>;
 
 const a: CircleType = 'circle';

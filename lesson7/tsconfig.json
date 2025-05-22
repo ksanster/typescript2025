@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2024",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-    "lib": ["es2024", "esnext", "dom"],
+    "target": "ES2022",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "lib": ["es2021", "esnext", "dom"],
 
     "module": "ES6",
     "rootDir": "./src",                                  /* Specify the root folder within your source files. */

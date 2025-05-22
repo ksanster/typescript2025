@@ -1,23 +1,23 @@
 {
   "compilerOptions": {
-    "target": "es2024",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-    "lib": ["es2024", "esnext", "dom"],
+    "target": "ES2024",
+    "lib": ["es2021", "esnext", "dom"],
 
     "module": "ES6",
-    "rootDir": "./src",                                  /* Specify the root folder within your source files. */
-    "moduleResolution": "node",                          /* Specify how TypeScript looks up a file from a given module specifier. */
+    "rootDir": "./src",
+    "moduleResolution": "node",
 
-     "allowJs": true,                                  /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */
+     "allowJs": true,
 
-    "outDir": "./dist",                                  /* Specify an output folder for all emitted files. */
+    "outDir": "./dist",
 
-    "strict": true,                                      /* Enable all strict type-checking options. */
-    "noImplicitAny": true,                               /* Enable error reporting for expressions and declarations with an implied 'any' type. */
-    "strictNullChecks": true,                           /* When type checking, take into account 'null' and 'undefined'. */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictBindCallApply": true,
     "strictPropertyInitialization": true,
 
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true
   }
 }
