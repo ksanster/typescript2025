@@ -1,0 +1,29 @@
+{
+  "name": "typescript2025-lesson8",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/ksanster/typescript2025.git"
+  },
+  "author": "a.semin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksanster/typescript2025/issues"
+  },
+  "homepage": "https://github.com/ksanster/typescript2025#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "description": "",
+  "dependencies": {
+    "ts-toolbelt": "^9.6.0"
+  }
+}
