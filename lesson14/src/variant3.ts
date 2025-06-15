@@ -4,7 +4,6 @@ import { Head, Tail } from './variant2';
 import { User } from './variant1';
 
 type EventList = [string, ...unknown[]][];
-type EventHash = Record<string, unknown[]>;
 
 type ExtractToTuple<S extends string, R extends string[] = []> = S extends ''
     ? R
@@ -26,12 +25,6 @@ type FindEvent<N extends string, L extends EventList> = L['length'] extends 0
     : CompareTuples<ExtractToTuple<N>, ExtractToTuple<Head<L>[0]>> extends true
         ? Tail<Head<L>>
         : FindEvent<N, Tail<L>>
-
-type ResolveEvents<E extends EventList, R extends EventHash = {}> = E['length'] extends 0
-    ? R
-    // Вполне работает R & {[K in Head<E>[0]]: Tail<Head<E>>}>, необязательно делать FindEvent
-    : ResolveEvents<Tail<E>, R & {[K in Head<E>[0]]: FindEvent<K, E>}>
-
 
 class EventEmitter<L extends EventList> {
     private handlers: Map<string, Set<Function>> = new Map();
