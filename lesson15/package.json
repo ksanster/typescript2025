@@ -1,0 +1,40 @@
+{
+  "name": "typescript2025-lesson8",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build-cjs && npm run build-esm",
+    "build-cjs": "tsc --build tsconfig.cjs.json && tsc-alias -p tsconfig.cjs.json",
+    "build-esm": "tsc --build tsconfig.esm.json && tsc-alias -p tsconfig.esm.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/ksanster/typescript2025.git"
+  },
+  "author": "a.semin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksanster/typescript2025/issues"
+  },
+  "homepage": "https://github.com/ksanster/typescript2025#readme",
+  "description": "",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "devDependencies": {
+    "@types/module-alias": "^2.0.4",
+    "@types/node": "^22.15.21",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.3",
+    "ts-toolbelt": "^9.6.0"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext", "dom", "esnext.decorators"],
+    "types": ["node"],
+    "rootDir": "./src",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "declaration": true,
+    "allowJs": true,
+
+    "incremental": true,
+    "esModuleInterop": true,
+    "composite": true,
+
+    "outDir": "./dist",
+
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+
+    "skipLibCheck": true,
+
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
