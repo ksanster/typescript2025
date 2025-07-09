@@ -1,24 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES2024",
-    "lib": ["es2021", "dom", "esnext.decorators"],
-    "types": ["node"],
-    "rootDir": "./src",
+    "target": "ESNext",
     "module": "ESNext",
+    "types": ["node"],
     "moduleResolution": "node",
-
-    "allowJs": true,
-
     "outDir": "./dist",
-
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-
-    "skipLibCheck": true
   },
   "include": [
     "src/**/*"

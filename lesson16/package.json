@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "tsc -w",
-    "build": "tsc"
+    "build": "npx --node-options \"--experimental-transform-types\" webpack"
   },
   "repository": {
     "type": "git",
@@ -17,13 +17,15 @@
     "url": "https://github.com/ksanster/typescript2025/issues"
   },
   "homepage": "https://github.com/ksanster/typescript2025#readme",
+  "description": "",
   "devDependencies": {
     "@types/node": "^22.15.21",
+    "@webpack-cli/generators": "^3.0.7",
+    "ts-loader": "^9.5.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
-  },
-  "description": "",
-  "dependencies": {
-    "ts-toolbelt": "^9.6.0"
+    "ts-patch": "^3.3.0",
+    "typescript": "^5.8.3",
+    "webpack": "^5.100.0",
+    "webpack-cli": "^6.0.1"
   }
 }
