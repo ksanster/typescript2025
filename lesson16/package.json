@@ -22,6 +22,7 @@
     "@types/node": "^22.15.21",
     "@webpack-cli/generators": "^3.0.7",
     "ts-loader": "^9.5.2",
+    "ts-macros": "^2.6.2",
     "ts-node": "^10.9.2",
     "ts-patch": "^3.3.0",
     "typescript": "^5.8.3",

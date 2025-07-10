@@ -2,7 +2,10 @@ import type { Program } from 'typescript';
 import regexInitTransformer from './transformers/regexInit.ts';
 import randomValueReplaceTransformer from './transformers/random.ts';
 import * as path from 'node:path';
+import TSMacros from 'ts-macros';
 
+// @ts-ignore
+// @ts-ignore
 export default {
     mode: "development",
     devtool: false,
@@ -22,6 +25,8 @@ export default {
                             before: [
                                 regexInitTransformer(program),
                                 randomValueReplaceTransformer(),
+                                //@ts-ignore
+                                TSMacros.default(program)
                             ]
                         })
                     }
