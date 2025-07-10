@@ -20,6 +20,7 @@ export default function regexInitTransformer(program: ts.Program): ts.Transforme
                         );
                     }
                 }
+                
                 return ts.visitEachChild(node, visitor, context);
             }
         };

@@ -1,5 +1,6 @@
 import type { Program } from 'typescript';
 import regexInitTransformer from './transformers/regexInit.ts';
+import randomValueReplaceTransformer from './transformers/random.ts';
 import * as path from 'node:path';
 
 export default {
@@ -19,7 +20,8 @@ export default {
                         configFile: path.resolve(import.meta.dirname, "tsconfig.json"),
                         getCustomTransformers: (program:Program) => ({
                             before: [
-                                regexInitTransformer(program)
+                                regexInitTransformer(program),
+                                randomValueReplaceTransformer(),
                             ]
                         })
                     }
